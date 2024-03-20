@@ -17,10 +17,10 @@ def  create_task():
 
     task = MaintenanceTasks(TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel)
 
-    db.session.add(maintenance_task)
+    db.session.add(task)
     db.session.commit()
 
-    response = task_schema.dump(maintenance_task)
+    response = task_schema.dump(task)
     return jsonify(response)
 
 @api.route('/maintenance-tasks', methods = ['GET'])
