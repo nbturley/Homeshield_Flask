@@ -12,25 +12,36 @@ class MaintenanceTasks(db.Model):
     TaskName = db.Column(db.String, nullable = False)
     HouseType = db.Column(db.String, nullable = False)
     MaintenanceType = db.Column(db.String, nullable = False)
-    ContractorID = db.Column(db.Integer, db.ForeignKey('contractor.ContractorID'))
+    # ContractorID = db.Column(db.Integer, db.ForeignKey('contractor.ContractorID'))
     EstContractorCost = db.Column(db.Integer)
     EstDIYCost = db.Column(db.Integer)
     CostDiff = db.Column(db.Integer)
     DIYVideoLink = db.Column(db.String)
+    TaskImageURL = db.Column(db.String)
+    TaskLevel = db.Column(db.String)
 
-    def __init__(self, TaskID, TaskName, HouseType, MaintenanceType, ContractorID, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink):
+    def __init__(self, TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel, TaskID=''):
         self.TaskID = self.set_id()
         self.TaskName = TaskName
         self.HouseType = HouseType
         self.MaintenanceType = MaintenanceType
-        self.ContractorID = ContractorID
+        # self.ContractorID = ContractorID
         self.EstContractorCost = EstContractorCost
         self.EstDIYCost = EstDIYCost
         self.CostDiff = CostDiff
         self.DIYVideoLink = DIYVideoLink
+        self.TaskImageURL = TaskImageURL
+        self.TaskLevel = TaskLevel
 
     def __repr__(self):
         return f'The following task has been added to the task list: {self.TaskName}'
     
     def set_id(self):
         return str(uuid.uuid4)
+    
+class TaskSchema(ma.Schema):
+    class Meta:
+        fields = ['TaskName', 'HouseType', 'MaintenanceType', 'ContractorID', 'EstContractorCost', 'EstDIYCost', 'CostDiff', 'DIYVideoLink', 'TaskImageURL', 'TaskLevel', 'TaskID']
+
+task_schema = TaskSchema()
+tasks_schema = TaskSchema(many=True)
