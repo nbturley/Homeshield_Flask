@@ -36,7 +36,7 @@ def update_task(taskId):
     task.HouseType = request.json['HouseType']
     task.MaintenanceType = request.json['MaintenanceType']
     task.EstContractorCost = request.json['EstContractorCost']
-    task.EstDIYCost = request.json['EstDIYDiff']
+    task.EstDIYCost = request.json['EstDIYCost']
     task.CostDiff = request.json['CostDiff']
     task.DIYVideoLink = request.json['DIYVideoLink']
     task.TaskImageURL = request.json['TaskImageURL']
