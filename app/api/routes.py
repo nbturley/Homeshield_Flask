@@ -9,7 +9,7 @@ def  create_task():
     HouseType = request.json['HouseType']
     MaintenanceType = request.json['MaintenanceType']
     EstContractorCost = request.json['EstContractorCost']
-    EstDIYCost = request.json['EstDIYDiff']
+    EstDIYCost = request.json['EstDIYCost']
     CostDiff = request.json['CostDiff']
     DIYVideoLink = request.json['DIYVideoLink']
     TaskImageURL = request.json['TaskImageURL']
@@ -25,7 +25,7 @@ def  create_task():
 
 @api.route('/maintenance-tasks', methods = ['GET'])
 def get_tasks():
-    tasks = MaintenanceTasks.all()
+    tasks = MaintenanceTasks.query.all()
     response = tasks_schema.dump(tasks)
     return jsonify(response)
 
@@ -36,7 +36,7 @@ def update_task(taskId):
     task.HouseType = request.json['HouseType']
     task.MaintenanceType = request.json['MaintenanceType']
     task.EstContractorCost = request.json['EstContractorCost']
-    task.EstDIYCost = request.json['EstDIYDiff']
+    task.EstDIYCost = request.json['EstDIYCost']
     task.CostDiff = request.json['CostDiff']
     task.DIYVideoLink = request.json['DIYVideoLink']
     task.TaskImageURL = request.json['TaskImageURL']

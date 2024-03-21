@@ -37,7 +37,7 @@ class MaintenanceTasks(db.Model):
         return f'The following task has been added to the task list: {self.TaskName}'
     
     def set_id(self):
-        return str(uuid.uuid4)
+        return str(uuid.uuid4())
     
 class TaskSchema(ma.Schema):
     class Meta:
