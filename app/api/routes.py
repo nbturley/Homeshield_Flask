@@ -53,3 +53,23 @@ def delete_task(taskId):
     db.session.commit()
     response = task_schema.dump(task)
     return jsonify(response)
+
+@api.route('/maintenance-tasks/data', methods = ['POST', 'PUT'])
+def handle_data():
+    data = request.get_json()
+
+    if not isinstance(data, list):
+        return jsonify({'error': 'Data must be a list of JSON objects'}), 400
+    
+    try:
+        for item in data:
+            task = MaintenanceTasks(**item)
+            db.session.add(task)
+        db.session.commit()
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 500
+    finally:
+        db.session.close()
+
+    return jsonify({'message': 'Data reveived and inserted successfully'}), 200
