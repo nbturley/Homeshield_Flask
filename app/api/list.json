@@ -1,0 +1,167 @@
+[
+    {
+        "TaskName": "Installing Garbage Disposal",
+        "HouseType": "House",
+        "MaintenanceType": "Plumbing",
+        "EstContractorCost": "400",
+        "EstDIYCost": "250",
+        "CostDiff": "150",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=igg2VOAnyGI&ab_channel=LRN2DIY",
+        "TaskImageURL": "garbage_disposal.jpg",
+        "TaskLevel": "Intermediate"
+    },
+    {
+        "TaskName": "Washing Machine Maintenance",
+        "HouseType": "Apartment, Condo, House",
+        "MaintenanceType": "Appliance",
+        "EstContractorCost": "200",
+        "EstDIYCost": "60",
+        "CostDiff": "140",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=JH8027l9Z6c&ab_channel=RepairClinic.com",
+        "TaskImageURL": "washing_machine.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Water Heater Flush",
+        "HouseType": "House",
+        "MaintenanceType": "Plumbing",
+        "EstContractorCost": "250",
+        "EstDIYCost": "150",
+        "CostDiff": "100",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=PtGCfBWBjiE&ab_channel=RogerWakefieldPlumbingEducation",
+        "TaskImageURL": "water_heater_flush.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Carpet Cleaning",
+        "HouseType": "Apartment, Condo, House",
+        "MaintenanceType": "Interior",
+        "EstContractorCost": "200",
+        "EstDIYCost": "80",
+        "CostDiff": "120",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=Zif_BxJKgiA&ab_channel=KarrieTruman%2CHappyMoneySaver",
+        "TaskImageURL": "carpet_cleaning.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Dishwasher Maintenance",
+        "HouseType": "Apartment, Condo, House",
+        "MaintenanceType": "Appliance",
+        "EstContractorCost": "1500",
+        "EstDIYCost": "700",
+        "CostDiff": "800",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=Qa6OsgJqLmc&ab_channel=ExpertVillageLeafGroup",
+        "TaskImageURL": "dishwasher_maintenance.jpg",
+        "TaskLevel": "Advanced"
+    },
+    {
+        "TaskName": "Fire Safety Inspection",
+        "HouseType": "Apartment, Condo, House",
+        "MaintenanceType": "Safety",
+        "EstContractorCost": "350",
+        "EstDIYCost": "100",
+        "CostDiff": "250",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=EVnSnKOEl9E&ab_channel=RayAbboud",
+        "TaskImageURL": "fire_safety_inspection.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Pest Control",
+        "HouseType": "Apartment, Condo, House",
+        "MaintenanceType": "Pest Control",
+        "EstContractorCost": "300",
+        "EstDIYCost": "100",
+        "CostDiff": "200",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=47x4efsgHiM&ab_channel=DoMyOwn",
+        "TaskImageURL": "pest_control.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Electrical System Check",
+        "HouseType": "Condo, House",
+        "MaintenanceType": "Electrical",
+        "EstContractorCost": "600",
+        "EstDIYCost": "200",
+        "CostDiff": "400",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=5PGjJHIFV6w&ab_channel=ThisOldHouse",
+        "TaskImageURL": "electrical_system_check.jpg",
+        "TaskLevel": "Intermediate"
+    },
+    {
+        "TaskName": "Toilet Repairs",
+        "HouseType": "Condo, House",
+        "MaintenanceType": "Plumbing",
+        "EstContractorCost": "500",
+        "EstDIYCost": "150",
+        "CostDiff": "350",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=7ePc9cz__FM&ab_channel=ThisOldHouse",
+        "TaskImageURL": "plumbing_repairs.jpg",
+        "TaskLevel": "Intermediate"
+    },
+    {
+        "TaskName": "Clean Dryer Vents",
+        "HouseType": "House",
+        "MaintenanceType": "Appliance",
+        "EstContractorCost": "0",
+        "EstDIYCost": "0",
+        "CostDiff": "0",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=Pe-L2pbQjoY&ab_channel=SilverCymbal",
+        "TaskImageURL": "clean_dryer_vents.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Gutter Cleaning",
+        "HouseType": "House",
+        "MaintenanceType": "Exterior",
+        "EstContractorCost": "1200",
+        "EstDIYCost": "100",
+        "CostDiff": "1100",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=VzcQ2S5axEE&ab_channel=Insider",
+        "TaskImageURL": "gutter_cleaning.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Lawn and Garden Maintenance",
+        "HouseType": "House",
+        "MaintenanceType": "Exterior",
+        "EstContractorCost": "400",
+        "EstDIYCost": "100",
+        "CostDiff": "300",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=c54WSOI-MMc&ab_channel=SilverCymbal",
+        "TaskImageURL": "lawn_garden_maintenance.jpg",
+        "TaskLevel": "Beginner"
+    },
+    {
+        "TaskName": "Exterior Painting",
+        "HouseType": "House",
+        "MaintenanceType": "Exterior",
+        "EstContractorCost": "600",
+        "EstDIYCost": "200",
+        "CostDiff": "400",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=sGGrc62jiiw&ab_channel=Mr.BuildIt",
+        "TaskImageURL": "exterior_painting.jpg",
+        "TaskLevel": "Intermediate"
+    },
+    {
+        "TaskName": "Roof Inspection",
+        "HouseType": "House",
+        "MaintenanceType": "Exterior",
+        "EstContractorCost": "1000",
+        "EstDIYCost": "200",
+        "CostDiff": "800",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=25hpwrrb2cM&ab_channel=IntegrityProRoofingTips%2BTricks",
+        "TaskImageURL": "roof_inspection.jpg",
+        "TaskLevel": "Intermediate"
+    },
+    {
+        "TaskName": "Change HVAC filters",
+        "HouseType": "Condo, House",
+        "MaintenanceType": "HVAC",
+        "EstContractorCost": "30",
+        "EstDIYCost": "10",
+        "CostDiff": "20",
+        "DIYVideoLink": "https://www.youtube.com/watch?v=ED3bfesbE_Y&ab_channel=SilverCymbal",
+        "TaskImageURL": "change_hvac_filters.jpg",
+        "TaskLevel": "Beginner"
+    }
+]
