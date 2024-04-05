@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify, render_template
 from models import db, MaintenanceTasks, task_schema, tasks_schema
+from sqlalchemy import or_
 
 api = Blueprint('api', __name__, url_prefix='/api')
 
@@ -72,4 +73,55 @@ def handle_data():
     finally:
         db.session.close()
 
-    return jsonify({'message': 'Data reveived and inserted successfully'}), 200
+    return jsonify({'message': 'Data received and inserted successfully'}), 200
+
+@api.route('/list', methods=['POST'])
+def get_task_list():
+    data = request.json
+    house_type = data.get('homeType')
+    washer = data.get('washer')
+    dryer = data.get('dryer')
+    dishwasher = data.get('dishwasher')
+    carpet = data.get('carpet')
+    yard = data.get('yard')
+    garbage_disposal = data.get('disposal')
+
+    query = MaintenanceTasks.query.filter(MaintenanceTasks.HouseType.like(f'%{house_type}%'))
+
+    filter_conditions = []
+
+    if washer:
+        filter_conditions.append(MaintenanceTasks.TaskName.like('%Washing%'))
+    if dryer:
+        filter_conditions.append(MaintenanceTasks.TaskName.like('%Dryer%'))
+    if dishwasher:
+        filter_conditions.append(MaintenanceTasks.TaskName.like('%Dishwasher%'))
+    if carpet:
+        filter_conditions.append(MaintenanceTasks.TaskName.like('%Carpet%'))
+    if yard:
+        filter_conditions.append(MaintenanceTasks.TaskName.like('%Lawn%'))
+    if garbage_disposal:
+        filter_conditions.append(MaintenanceTasks.TaskName.like('%Garbage%'))
+
+    if filter_conditions:
+        query = query.filter(or_(*filter_conditions))
+
+    # Query to get tasks associated with the house type and true boolean values
+    tasks_with_bools = query.all()
+
+    # Query to get unassociated tasks that match the house type
+    unassociated_tasks = MaintenanceTasks.query.filter(
+        MaintenanceTasks.HouseType.like(f'%{house_type}%'),
+        ~MaintenanceTasks.TaskName.like('%Washing%'),
+        ~MaintenanceTasks.TaskName.like('%Dryer%'),
+        ~MaintenanceTasks.TaskName.like('%Dishwasher%'),
+        ~MaintenanceTasks.TaskName.like('%Carpet%'),
+        ~MaintenanceTasks.TaskName.like('%Lawn%'),
+        ~MaintenanceTasks.TaskName.like('%Garbage%')
+    ).all()
+
+    # Combine the results of both queries while removing duplicates
+    unique_tasks = set(tasks_with_bools + unassociated_tasks)
+
+    response = tasks_schema.dump(unique_tasks)
+    return jsonify(response)

@@ -1,7 +1,7 @@
 [
     {
         "TaskName": "Installing Garbage Disposal",
-        "HouseType": "House",
+        "HouseType": "Apartment, Condo, House",
         "MaintenanceType": "Plumbing",
         "EstContractorCost": "400",
         "EstDIYCost": "250",
