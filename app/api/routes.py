@@ -42,6 +42,7 @@ def update_task(taskId):
     task.DIYVideoLink = request.json['DIYVideoLink']
     task.TaskImageURL = request.json['TaskImageURL']
     task.TaskLevel = request.json['TaskLevel']
+    task.Frequency = request.json['Frequency']
 
     db.session.commit()
     response = task_schema.dump(task)

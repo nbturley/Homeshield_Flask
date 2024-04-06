@@ -1,6 +1,6 @@
 [
     {
-        "TaskName": "Installing Garbage Disposal",
+        "TaskName": "Garbage Disposal Maintenance",
         "HouseType": "Apartment, Condo, House",
         "MaintenanceType": "Plumbing",
         "EstContractorCost": "400",
@@ -8,7 +8,8 @@
         "CostDiff": "150",
         "DIYVideoLink": "https://www.youtube.com/watch?v=igg2VOAnyGI&ab_channel=LRN2DIY",
         "TaskImageURL": "garbage_disposal.jpg",
-        "TaskLevel": "Intermediate"
+        "TaskLevel": "Intermediate",
+        "Frequency": "Every Month"
     },
     {
         "TaskName": "Washing Machine Maintenance",
@@ -19,7 +20,8 @@
         "CostDiff": "140",
         "DIYVideoLink": "https://www.youtube.com/watch?v=JH8027l9Z6c&ab_channel=RepairClinic.com",
         "TaskImageURL": "washing_machine.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every Year"
     },
     {
         "TaskName": "Water Heater Flush",
@@ -30,7 +32,8 @@
         "CostDiff": "100",
         "DIYVideoLink": "https://www.youtube.com/watch?v=PtGCfBWBjiE&ab_channel=RogerWakefieldPlumbingEducation",
         "TaskImageURL": "water_heater_flush.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every Year"
     },
     {
         "TaskName": "Carpet Cleaning",
@@ -41,7 +44,8 @@
         "CostDiff": "120",
         "DIYVideoLink": "https://www.youtube.com/watch?v=Zif_BxJKgiA&ab_channel=KarrieTruman%2CHappyMoneySaver",
         "TaskImageURL": "carpet_cleaning.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every Year"
     },
     {
         "TaskName": "Dishwasher Maintenance",
@@ -52,7 +56,8 @@
         "CostDiff": "800",
         "DIYVideoLink": "https://www.youtube.com/watch?v=Qa6OsgJqLmc&ab_channel=ExpertVillageLeafGroup",
         "TaskImageURL": "dishwasher_maintenance.jpg",
-        "TaskLevel": "Advanced"
+        "TaskLevel": "Advanced",
+        "Frequency": "Every 6-12 Months"
     },
     {
         "TaskName": "Fire Safety Inspection",
@@ -63,7 +68,8 @@
         "CostDiff": "250",
         "DIYVideoLink": "https://www.youtube.com/watch?v=EVnSnKOEl9E&ab_channel=RayAbboud",
         "TaskImageURL": "fire_safety_inspection.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every Year"
     },
     {
         "TaskName": "Pest Control",
@@ -74,7 +80,8 @@
         "CostDiff": "200",
         "DIYVideoLink": "https://www.youtube.com/watch?v=47x4efsgHiM&ab_channel=DoMyOwn",
         "TaskImageURL": "pest_control.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every 3 Months"
     },
     {
         "TaskName": "Electrical System Check",
@@ -85,10 +92,11 @@
         "CostDiff": "400",
         "DIYVideoLink": "https://www.youtube.com/watch?v=5PGjJHIFV6w&ab_channel=ThisOldHouse",
         "TaskImageURL": "electrical_system_check.jpg",
-        "TaskLevel": "Intermediate"
+        "TaskLevel": "Intermediate",
+        "Frequency": "Every 5-10 Years"
     },
     {
-        "TaskName": "Toilet Repairs",
+        "TaskName": "Toilet Inspection/Repairs",
         "HouseType": "Condo, House",
         "MaintenanceType": "Plumbing",
         "EstContractorCost": "500",
@@ -96,7 +104,8 @@
         "CostDiff": "350",
         "DIYVideoLink": "https://www.youtube.com/watch?v=7ePc9cz__FM&ab_channel=ThisOldHouse",
         "TaskImageURL": "plumbing_repairs.jpg",
-        "TaskLevel": "Intermediate"
+        "TaskLevel": "Intermediate",
+        "Frequency": "Every Month"
     },
     {
         "TaskName": "Clean Dryer Vents",
@@ -107,7 +116,8 @@
         "CostDiff": "0",
         "DIYVideoLink": "https://www.youtube.com/watch?v=Pe-L2pbQjoY&ab_channel=SilverCymbal",
         "TaskImageURL": "clean_dryer_vents.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every Year"
     },
     {
         "TaskName": "Gutter Cleaning",
@@ -118,7 +128,8 @@
         "CostDiff": "1100",
         "DIYVideoLink": "https://www.youtube.com/watch?v=VzcQ2S5axEE&ab_channel=Insider",
         "TaskImageURL": "gutter_cleaning.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every 6 Months"
     },
     {
         "TaskName": "Lawn and Garden Maintenance",
@@ -129,7 +140,8 @@
         "CostDiff": "300",
         "DIYVideoLink": "https://www.youtube.com/watch?v=c54WSOI-MMc&ab_channel=SilverCymbal",
         "TaskImageURL": "lawn_garden_maintenance.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every 2 Weeks"
     },
     {
         "TaskName": "Exterior Painting",
@@ -140,7 +152,8 @@
         "CostDiff": "400",
         "DIYVideoLink": "https://www.youtube.com/watch?v=sGGrc62jiiw&ab_channel=Mr.BuildIt",
         "TaskImageURL": "exterior_painting.jpg",
-        "TaskLevel": "Intermediate"
+        "TaskLevel": "Intermediate",
+        "Frequency": "Every 5-10 Years"
     },
     {
         "TaskName": "Roof Inspection",
@@ -151,7 +164,8 @@
         "CostDiff": "800",
         "DIYVideoLink": "https://www.youtube.com/watch?v=25hpwrrb2cM&ab_channel=IntegrityProRoofingTips%2BTricks",
         "TaskImageURL": "roof_inspection.jpg",
-        "TaskLevel": "Intermediate"
+        "TaskLevel": "Intermediate",
+        "Frequency": "Every Year"
     },
     {
         "TaskName": "Change HVAC filters",
@@ -162,6 +176,7 @@
         "CostDiff": "20",
         "DIYVideoLink": "https://www.youtube.com/watch?v=ED3bfesbE_Y&ab_channel=SilverCymbal",
         "TaskImageURL": "change_hvac_filters.jpg",
-        "TaskLevel": "Beginner"
+        "TaskLevel": "Beginner",
+        "Frequency": "Every 3 Months"
     }
 ]
