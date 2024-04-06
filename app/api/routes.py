@@ -15,8 +15,9 @@ def  create_task():
     DIYVideoLink = request.json['DIYVideoLink']
     TaskImageURL = request.json['TaskImageURL']
     TaskLevel = request.json['TaskLevel']
+    Frequency = request.json['Frequency']
 
-    task = MaintenanceTasks(TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel)
+    task = MaintenanceTasks(TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel, Frequency)
 
     db.session.add(task)
     db.session.commit()
