@@ -16,6 +16,7 @@ def  create_task():
     TaskImageURL = request.json['TaskImageURL']
     TaskLevel = request.json['TaskLevel']
     Frequency = request.json['Frequency']
+    VideoId = request.json['VideoId']
 
     task = MaintenanceTasks(TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel, Frequency)
 
@@ -44,6 +45,7 @@ def update_task(taskId):
     task.TaskImageURL = request.json['TaskImageURL']
     task.TaskLevel = request.json['TaskLevel']
     task.Frequency = request.json['Frequency']
+    task.VideoId = request.json['VideoId']
 
     db.session.commit()
     response = task_schema.dump(task)

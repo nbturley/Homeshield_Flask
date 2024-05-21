@@ -20,8 +20,9 @@ class MaintenanceTasks(db.Model):
     TaskImageURL = db.Column(db.String)
     TaskLevel = db.Column(db.String)
     Frequency = db.Column(db.String)
+    VideoId = db.Column(db.String)
 
-    def __init__(self, TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel, Frequency, TaskID=''):
+    def __init__(self, TaskName, HouseType, MaintenanceType, EstContractorCost, EstDIYCost, CostDiff, DIYVideoLink, TaskImageURL, TaskLevel, Frequency, VideoId, TaskID=''):
         self.TaskID = self.set_id()
         self.TaskName = TaskName
         self.HouseType = HouseType
@@ -34,6 +35,7 @@ class MaintenanceTasks(db.Model):
         self.TaskImageURL = TaskImageURL
         self.TaskLevel = TaskLevel
         self.Frequency = Frequency
+        self.VideoId = VideoId
 
     def __repr__(self):
         return f'The following task has been added to the task list: {self.TaskName}'
@@ -43,7 +45,7 @@ class MaintenanceTasks(db.Model):
     
 class TaskSchema(ma.Schema):
     class Meta:
-        fields = ['TaskName', 'HouseType', 'MaintenanceType', 'ContractorID', 'EstContractorCost', 'EstDIYCost', 'CostDiff', 'DIYVideoLink', 'TaskImageURL', 'TaskLevel', 'Frequency', 'TaskID']
+        fields = ['TaskName', 'HouseType', 'MaintenanceType', 'ContractorID', 'EstContractorCost', 'EstDIYCost', 'CostDiff', 'DIYVideoLink', 'TaskImageURL', 'TaskLevel', 'Frequency', 'VideoId', 'TaskID']
 
 task_schema = TaskSchema()
 tasks_schema = TaskSchema(many=True)
